@@ -1,0 +1,22 @@
+package com.example.breastcancerlocal
+
+import android.app.Application
+import androidx.room.Room
+import com.example.breastcancerlocal.database.DiabeatsDatabase
+
+class DiabeatsApplication : Application() {
+
+    companion object {
+        lateinit var database: DiabeatsDatabase
+            private set
+    }
+    override fun onCreate() {
+        super.onCreate()
+        database = Room
+            .databaseBuilder(
+                this,
+                DiabeatsDatabase::class.java,
+                "diabeatsDatabase"
+            )
+            .build() }
+}

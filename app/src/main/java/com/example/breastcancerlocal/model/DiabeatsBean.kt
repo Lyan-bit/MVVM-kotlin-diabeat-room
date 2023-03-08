@@ -89,7 +89,9 @@ class DiabeatsBean(c: Context) {
 	        
 	 errors.clear()
 	        
-	 	 	           if (id != "") {}
+	 	 	           if (id != "") {
+				   //id
+				   }
 	else {
 	 	  errors.add("id cannot be empty")
 	}

@@ -85,32 +85,14 @@ class DiabeatsCRUDViewModel constructor(context: Context): ViewModel() {
             val itemx = Diabeats.createByPKDiabeats(_val)
             if (diabeats.isNotEmpty()) {
                 itemx.id = diabeats[0].id
-            }
-            if (diabeats.isNotEmpty()) {
                 itemx.pregnancies = diabeats[0].pregnancies
-            }
-            if (diabeats.isNotEmpty()) {
                 itemx.glucose = diabeats[0].glucose
-            }
-            if (diabeats.isNotEmpty()) {
                 itemx.bloodPressure = diabeats[0].bloodPressure
-            }
-            if (diabeats.isNotEmpty()) {
                 itemx.skinThickness = diabeats[0].skinThickness
-            }
-            if (diabeats.isNotEmpty()) {
                 itemx.insulin = diabeats[0].insulin
-            }
-            if (diabeats.isNotEmpty()) {
                 itemx.bmi = diabeats[0].bmi
-            }
-            if (diabeats.isNotEmpty()) {
                 itemx.diabetesPedigreeFunction = diabeats[0].diabetesPedigreeFunction
-            }
-            if (diabeats.isNotEmpty()) {
                 itemx.age = diabeats[0].age
-            }
-            if (diabeats.isNotEmpty()) {
                 itemx.outcome = diabeats[0].outcome
             }
             itemx
@@ -240,8 +222,8 @@ class DiabeatsCRUDViewModel constructor(context: Context): ViewModel() {
         currentDiabeatss = repository.searchByDiabeatsinsulin2(insulinx)
         return currentDiabeatss
     }
-    suspend fun searchByDiabeatsBMI2(BMIx: Double): List<DiabeatsEntity> {
-        currentDiabeatss = repository.searchByDiabeatsBMI2(BMIx)
+    suspend fun searchByDiabeatsBMI2(mbix: Double): List<DiabeatsEntity> {
+        currentDiabeatss = repository.searchByDiabeatsBMI2(bmix)
         return currentDiabeatss
     }
     suspend fun searchByDiabeatsdiabetesPedigreeFunction2(diabetesPedigreeFunctionx: Double): List<DiabeatsEntity> {

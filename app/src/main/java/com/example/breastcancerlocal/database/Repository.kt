@@ -127,8 +127,8 @@ class Repository : DiabeatsRepository {
      }
 	     
     //Search with suspend
-     override suspend fun searchByDiabeatsBMI2 (BMI: Double): List<DiabeatsEntity> {
-          return diabeatsDAO.searchByDiabeatsBMI2(BMI)
+     override suspend fun searchByDiabeatsBMI2 (bmi: Double): List<DiabeatsEntity> {
+          return diabeatsDAO.searchByDiabeatsBMI2(bmi)
      }
 	     
     //Search with suspend

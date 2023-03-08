@@ -1,7 +1,6 @@
 package com.example.breastcancerlocal.database
 
 import androidx.room.*
-import com.example.breastcancerlocal.database.DiabeatsEntity
 import kotlinx.coroutines.flow.Flow
 
 @Dao

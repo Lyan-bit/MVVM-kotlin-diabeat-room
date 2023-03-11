@@ -222,7 +222,7 @@ class DiabeatsCRUDViewModel constructor(context: Context): ViewModel() {
         currentDiabeatss = repository.searchByDiabeatsinsulin2(insulinx)
         return currentDiabeatss
     }
-    suspend fun searchByDiabeatsBMI2(mbix: Double): List<DiabeatsEntity> {
+    suspend fun searchByDiabeatsBMI2(bmix: Double): List<DiabeatsEntity> {
         currentDiabeatss = repository.searchByDiabeatsBMI2(bmix)
         return currentDiabeatss
     }

@@ -35,7 +35,7 @@ class ClassificationViewModel (context: Context): ViewModel() {
     }
 
     suspend fun classify(classification: Diabeats) : String {
-        var res = ""
+        var res : String
         lateinit var tflite : Interpreter
         lateinit var tflitemodel : ByteBuffer
 
